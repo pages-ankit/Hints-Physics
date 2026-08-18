@@ -25,9 +25,119 @@ One complete rotation corresponds to $$\\Delta\\theta = 2\\pi$$ RPM= revolution 
         image: "",
         audio: ""
       },
+      4: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
       5: {
         text: `Use differentiation of angle wrt time. Note that the given function is in terms of theta instead of 
         time. Hence take care to apply variable change or chain rule`,
+        image: "",
+        audio: ""
+      }
+      6: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      7: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      8: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      9: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      10: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      11: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      12: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      13: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      14: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      15: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      16: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      17: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      18: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      19: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      20: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      21: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      22: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      23: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      24: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      25: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      26: {
+        text: `Hint not uploaded`,
         image: "",
         audio: ""
       }
