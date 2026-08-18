@@ -9,10 +9,10 @@ const exercisesData = {
       1: {
         text: `Use the fundamental definition of angular velocity:
         $$\\omega = \\frac{\\Delta\\theta}{\\Delta t}$$
-One complete rotation corresponds to $$\\Delta\\theta = 2\\pi$$ RPM= revolution per minute`,
+        One complete rotation corresponds to $$\\Delta\\theta = 2\\pi$$ RPM= revolution per minute`,
         image: "",
         audio: ""
-},
+      },
       2: {
         text: `Use 3rd equation of motion for circular kinematics. Take care to convert the angle in radian. One
         rotation is $2\\pi$ radian`,
