@@ -82,9 +82,9 @@ One complete rotation corresponds to $$\\Delta\\theta = 2\\pi$$ RPM= revolution 
         audio: ""
       },
       15: {
-        text: `Hint not uploaded`,
+        text: `Concept of vectors`,
         image: "",
-        audio: ""
+        audio: "O1Q15.m4a"
       },
       16: {
         text: `Hint not uploaded`,
