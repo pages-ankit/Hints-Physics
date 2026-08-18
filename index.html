@@ -8,8 +8,7 @@
   <!-- KaTeX for Physics LaTeX rendering -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-    onload="renderMathInElement(document.body);"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -87,6 +86,10 @@
       margin-bottom: 12px;
     }
     .hint-section { margin-bottom: 12px; }
+    .hint-text {
+      white-space: pre-wrap; /* Preserves multiline formatting & math layout */
+      line-height: 1.6;
+    }
     .hint-section img {
       max-width: 100%;
       height: auto;
@@ -121,12 +124,14 @@
     const gridContainer = document.getElementById("index-grid");
     const hintBox = document.getElementById("hint-box");
 
-    let currentExercise = Object.keys(exercisesData)[0]; // Default to "Exercise O-I"
+    // Guard in case exercisesData isn't loaded or is empty
+    const exercises = (typeof exercisesData !== "undefined") ? Object.keys(exercisesData) : [];
+    let currentExercise = exercises.length > 0 ? exercises[0] : "";
 
     // 1. Render Tabs
     function renderTabs() {
       tabsContainer.innerHTML = "";
-      Object.keys(exercisesData).forEach(exKey => {
+      exercises.forEach(exKey => {
         const btn = document.createElement("button");
         btn.className = `tab-btn ${exKey === currentExercise ? 'active' : ''}`;
         btn.textContent = exKey;
@@ -143,6 +148,8 @@
     // 2. Render Questions for Selected Exercise
     function renderQuestionGrid() {
       gridContainer.innerHTML = "";
+      if (!currentExercise || typeof exercisesData === "undefined") return;
+
       const exConfig = exercisesData[currentExercise];
       if (!exConfig) return;
 
@@ -160,7 +167,9 @@
       document.querySelectorAll(".q-btn").forEach(b => b.classList.remove("active"));
       btnElement.classList.add("active");
 
-      const hints = exercisesData[currentExercise]?.hints || {};
+      const hints = (typeof exercisesData !== "undefined" && exercisesData[currentExercise]) 
+        ? exercisesData[currentExercise].hints || {} 
+        : {};
       const data = hints[qNum];
 
       if (!data) {
@@ -174,7 +183,7 @@
       let contentHTML = `<div class="hint-header">${currentExercise} — Question ${qNum}</div>`;
 
       if (data.text) {
-        contentHTML += `<div class="hint-section"><p>${data.text}</p></div>`;
+        contentHTML += `<div class="hint-section"><div class="hint-text">${data.text}</div></div>`;
       }
       if (data.image) {
         contentHTML += `
@@ -193,13 +202,18 @@
 
       hintBox.innerHTML = contentHTML;
 
-      // Re-trigger KaTeX formula parsing
-      if (window.renderMathInElement) {
+      // Safe KaTeX rendering
+      renderLatex();
+    }
+
+    function renderLatex() {
+      if (typeof renderMathInElement === "function") {
         renderMathInElement(hintBox, {
           delimiters: [
             { left: "$$", right: "$$", display: true },
             { left: "$", right: "$", display: false }
-          ]
+          ],
+          throwOnError: false
         });
       }
     }
@@ -208,9 +222,11 @@
       hintBox.innerHTML = `<div class="empty-state">Select a question number from ${currentExercise}.</div>`;
     }
 
-    // Initialize UI
-    renderTabs();
-    renderQuestionGrid();
+    // Initialize UI on DOM Ready
+    window.addEventListener("DOMContentLoaded", () => {
+      renderTabs();
+      renderQuestionGrid();
+    });
   </script>
 </body>
 </html>
