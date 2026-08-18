@@ -1,0 +1,64 @@
+<!-- Link external data file -->
+  <script src="data.js"></script>
+
+  <script>
+    const grid = document.getElementById("index-grid");
+    const hintBox = document.getElementById("hint-box");
+
+    // Build the grid using TOTAL_QUESTIONS from data.js
+    for (let i = 1; i <= TOTAL_QUESTIONS; i++) {
+      const btn = document.createElement("button");
+      btn.className = "q-btn";
+      btn.textContent = i;
+      btn.onclick = () => loadHint(i, btn);
+      grid.appendChild(btn);
+    }
+
+    function loadHint(qNum, btnElement) {
+      document.querySelectorAll(".q-btn").forEach(b => b.classList.remove("active"));
+      btnElement.classList.add("active");
+
+      const data = hintsData[qNum];
+
+      if (!data || (!data.text && !data.image && !data.audio)) {
+        hintBox.innerHTML = `
+          <div class="hint-header">Question ${qNum}</div>
+          <p class="empty-state">No hint uploaded for this question yet.</p>
+        `;
+        return;
+      }
+
+      let contentHTML = `<div class="hint-header">Question ${qNum} — Hint</div>`;
+
+      if (data.text) {
+        contentHTML += `<div class="hint-section"><p>${data.text}</p></div>`;
+      }
+      if (data.image) {
+        contentHTML += `
+          <div class="hint-section">
+            <strong>Diagram:</strong>
+            <img src="${data.image}" alt="Diagram for Question ${qNum}">
+          </div>`;
+      }
+      if (data.audio) {
+        contentHTML += `
+          <div class="hint-section">
+            <strong>Audio Explanation:</strong>
+            <audio controls src="${data.audio}"></audio>
+          </div>`;
+      }
+
+      hintBox.innerHTML = contentHTML;
+
+      if (window.renderMathInElement) {
+        renderMathInElement(hintBox, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false }
+          ]
+        });
+      }
+    }
+  </script>
+</body>
+</html>
