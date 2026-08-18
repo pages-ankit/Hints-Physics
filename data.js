@@ -4,24 +4,34 @@ const exercisesData = {
   "Exercise O-I": {
     totalQuestions: 26,
     hints: {
+      // Add this entry inside your exercise hints object (replace question number as needed):
+
       1: {
-        text: `Resolve forces along the coordinate axes:
-$$N = mg \\cos\\theta$$
-Apply Newton's second law along the incline: $mg \\sin\\theta - f_k = ma$.`,
+        text: `Use the fundamental definition of angular velocity:
+        $$\\omega = \\frac{\\Delta\\theta}{\\Delta t}$$
+One complete rotation corresponds to $$\\Delta\\theta = 2\\pi$$ RPM= revolution per minute`,
         image: "",
         audio: ""
-      },
+},
       2: {
-        text: `Conserve mechanical energy between initial and final states:
-$$mgh = \\frac{1}{2}mv^2 + \\frac{1}{2}I\\omega^2$$`,
-        image: "images/OI_q2.png",
+        text: `Use 3rd equation of motion for circular kinematics. Take care to convert the angle in radian. One
+        rotation is $2\\pi$ radian`,
+        image: "",
         audio: ""
       },
       3: {
-        text: `Take torque about the instantaneous center of zero velocity (ICOR).`,
+        text: `Angular velocity for a rigid body is same at all the points. Linear velocity is different for 
+        different radial distances`,
         image: "",
-        audio: "audio/OI_q3.mp3"
+        audio: ""
+      },
+      5: {
+        text: `Use differentiation of angle wrt time. Note that the given function is in terms of theta instead of 
+        time. Hence take care to apply variable change or chain rule`,
+        image: "",
+        audio: ""
       }
+
       // Fill hints up to question 26 as needed
     }
   },
