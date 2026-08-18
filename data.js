@@ -35,7 +35,7 @@ One complete rotation corresponds to $$\\Delta\\theta = 2\\pi$$ RPM= revolution 
         time. Hence take care to apply variable change or chain rule`,
         image: "",
         audio: ""
-      }
+      },
       6: {
         text: `Hint not uploaded`,
         image: "",
