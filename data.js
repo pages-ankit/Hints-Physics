@@ -127,7 +127,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       25: {
-        text: `Concept of Radius of Curvature (ROC)`,
+        text: `Concept of Radius of Curvature-ROC`,
         image: "",
         audio: "O1Q25.m4a"
       },
