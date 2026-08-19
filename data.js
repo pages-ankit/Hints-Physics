@@ -82,12 +82,12 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: "O1Q15.m4a"
       },
       16: {
-        text: `Hint not uploaded`,
+        text: `Since this is UCM, the acceleration mentioned here is centripetal acceleration. $v=\\omega R$`,
         image: "",
         audio: ""
       },
       17: {
-        text: `Hint not uploaded`,
+        text: `Differentiate v wrt time to get the tangential acceleration. Radial acceleration implies the centripetal acceleration`,
         image: "",
         audio: ""
       },
@@ -112,7 +112,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       22: {
-        text: `Hint not uploaded`,
+        text: `Concept of general angular velocity about a specific point of observation. Find component of instantaneous velocity along the effective radius.`,
         image: "",
         audio: ""
       },
