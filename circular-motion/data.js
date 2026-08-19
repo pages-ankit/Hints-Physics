@@ -42,7 +42,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       8: {
-        text: `Cross product relations. $\vec{v} = \vec{\omega} \times \vec{r}$`,
+        text: `Cross product relations. $$\vec{v} = \vec{\omega} \times \vec{r}$$`,
         image: "",
         audio: ""
       },
