@@ -57,7 +57,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       11: {
-        text: `Hint not uploaded`,
+        text: `Time period of the second had of a clock is 60 seconds. This will help in getting $\omega$`,
         image: "",
         audio: ""
       },
