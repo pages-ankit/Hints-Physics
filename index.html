@@ -8,7 +8,8 @@
   <!-- KaTeX for Physics LaTeX rendering -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -70,6 +71,19 @@
     .q-btn:hover { background: #e8e8e8; }
     .q-btn.active { background: #222; color: #fff; border-color: #222; }
 
+    footer {
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    }
+    #visit-count {
+      font-weight: 600;
+      color: #333;
+    }
+    
     /* Hint Box Area */
     #hint-box {
       border: 1px solid #ccc;
@@ -86,10 +100,6 @@
       margin-bottom: 12px;
     }
     .hint-section { margin-bottom: 12px; }
-    .hint-text {
-      white-space: pre-wrap; /* Preserves multiline formatting & math layout */
-      line-height: 1.6;
-    }
     .hint-section img {
       max-width: 100%;
       height: auto;
@@ -124,14 +134,12 @@
     const gridContainer = document.getElementById("index-grid");
     const hintBox = document.getElementById("hint-box");
 
-    // Guard in case exercisesData isn't loaded or is empty
-    const exercises = (typeof exercisesData !== "undefined") ? Object.keys(exercisesData) : [];
-    let currentExercise = exercises.length > 0 ? exercises[0] : "";
+    let currentExercise = Object.keys(exercisesData)[0]; // Default to "Exercise O-I"
 
     // 1. Render Tabs
     function renderTabs() {
       tabsContainer.innerHTML = "";
-      exercises.forEach(exKey => {
+      Object.keys(exercisesData).forEach(exKey => {
         const btn = document.createElement("button");
         btn.className = `tab-btn ${exKey === currentExercise ? 'active' : ''}`;
         btn.textContent = exKey;
@@ -148,8 +156,6 @@
     // 2. Render Questions for Selected Exercise
     function renderQuestionGrid() {
       gridContainer.innerHTML = "";
-      if (!currentExercise || typeof exercisesData === "undefined") return;
-
       const exConfig = exercisesData[currentExercise];
       if (!exConfig) return;
 
@@ -167,9 +173,7 @@
       document.querySelectorAll(".q-btn").forEach(b => b.classList.remove("active"));
       btnElement.classList.add("active");
 
-      const hints = (typeof exercisesData !== "undefined" && exercisesData[currentExercise]) 
-        ? exercisesData[currentExercise].hints || {} 
-        : {};
+      const hints = exercisesData[currentExercise]?.hints || {};
       const data = hints[qNum];
 
       if (!data) {
@@ -183,7 +187,7 @@
       let contentHTML = `<div class="hint-header">${currentExercise} — Question ${qNum}</div>`;
 
       if (data.text) {
-        contentHTML += `<div class="hint-section"><div class="hint-text">${data.text}</div></div>`;
+        contentHTML += `<div class="hint-section"><p>${data.text}</p></div>`;
       }
       if (data.image) {
         contentHTML += `
@@ -202,18 +206,13 @@
 
       hintBox.innerHTML = contentHTML;
 
-      // Safe KaTeX rendering
-      renderLatex();
-    }
-
-    function renderLatex() {
-      if (typeof renderMathInElement === "function") {
+      // Re-trigger KaTeX formula parsing
+      if (window.renderMathInElement) {
         renderMathInElement(hintBox, {
           delimiters: [
             { left: "$$", right: "$$", display: true },
             { left: "$", right: "$", display: false }
-          ],
-          throwOnError: false
+          ]
         });
       }
     }
@@ -222,11 +221,25 @@
       hintBox.innerHTML = `<div class="empty-state">Select a question number from ${currentExercise}.</div>`;
     }
 
-    // Initialize UI on DOM Ready
-    window.addEventListener("DOMContentLoaded", () => {
-      renderTabs();
-      renderQuestionGrid();
-    });
+    // Initialize UI
+    renderTabs();
+    renderQuestionGrid();
   </script>
+
+  <footer>
+    Page Views: <span id="visit-count">...</span>
+  </footer>
+
+  <script>
+    fetch('https://hits.sh/pages-ankit.github.io/Hints-Physics/count.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('visit-count').textContent = data.count.toLocaleString();
+      })
+      .catch(() => {
+        document.getElementById('visit-count').textContent = 'N/A';
+      });
+  </script>
+
 </body>
 </html>
