@@ -122,8 +122,8 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       24: {
-        text: `Case of Projectile from tower.`,
-        image: "",
+        text: `Case of Projectile from tower. Find the component of g at time 3s.`,
+        image: "IMGO1Q24.png",
         audio: ""
       },
       25: {
