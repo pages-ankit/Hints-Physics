@@ -226,20 +226,20 @@
     renderQuestionGrid();
   </script>
 
-  <footer>
-    Page Views: <span id="visit-count">...</span>
-  </footer>
+  <p style="text-align: center; margin-top: 20px; font-size: 0.85rem; color: #666;">
+  Page Views: <strong id="visit-count" style="color: #1a1a1a;">...</strong>
+</p>
 
-  <script>
-    fetch('https://hits.sh/pages-ankit.github.io/Hints-Physics/count.json')
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('visit-count').textContent = data.count.toLocaleString();
-      })
-      .catch(() => {
-        document.getElementById('visit-count').textContent = 'N/A';
-      });
-  </script>
+<script>
+  fetch('https://api.counterapi.dev/v1/pages-ankit-hints/visits/up')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visit-count').textContent = data.count.toLocaleString();
+    })
+    .catch(() => {
+      document.getElementById('visit-count').textContent = 'N/A';
+    });
+</script>
 
 </body>
 </html>
