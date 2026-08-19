@@ -42,7 +42,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       8: {
-        text: `Hint not uploaded`,
+        text: `Cross product relations. $\vec(v)=\omega\times r$`,
         image: "",
         audio: ""
       },
@@ -168,7 +168,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       33: {
-        text: `Hint not uploaded`,
+        text: `Similar to the concept of banking with friction. Draw tangent at the point of contact. Solve in rotating frame.`,
         image: "",
         audio: ""
       }
