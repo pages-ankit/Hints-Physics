@@ -71,17 +71,35 @@
     .q-btn:hover { background: #e8e8e8; }
     .q-btn.active { background: #222; color: #fff; border-color: #222; }
 
+    /* Footer & Navigation Link */
     footer {
-    margin-top: 24px;
-    padding-top: 12px;
-    border-top: 1px solid #e0e0e0;
-    text-align: center;
-    font-size: 0.8rem;
-    color: #777;
+      margin-top: 24px;
+      padding-top: 14px;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
-    #visit-count {
+    .prism-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
       font-weight: 600;
-      color: #333;
+      color: #0066cc;
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid #d0e2ff;
+      background: #f0f6ff;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    .prism-link:hover {
+      background: #0066cc;
+      color: #fff;
+      border-color: #0066cc;
     }
     
     /* Hint Box Area */
@@ -134,7 +152,7 @@
     const gridContainer = document.getElementById("index-grid");
     const hintBox = document.getElementById("hint-box");
 
-    let currentExercise = Object.keys(exercisesData)[0]; // Default to "Exercise O-I"
+    let currentExercise = Object.keys(exercisesData)[0];
 
     // 1. Render Tabs
     function renderTabs() {
@@ -226,8 +244,11 @@
     renderQuestionGrid();
   </script>
 
-  <footer style="margin-top: 24px; padding-top: 12px; border-top: 1px solid #e0e0e0; text-align: center;">
-  <img src="https://hits.sh/pages-ankit.github.io/Hints-Physics.svg?view=today-total&label=Page+Views&color=0066cc" alt="Page Views" />
+  <footer>
+    <a href="https://sites.google.com/view/prism-dashboard/home" target="_blank" class="prism-link">
+      <span>← Back to PRISM Dashboard</span>
+    </a>
+    <img src="https://hits.sh/pages-ankit.github.io/Hints-Physics.svg?view=today-total&label=Page+Views&color=0066cc" alt="Page Views" />
   </footer>
 
 </body>
