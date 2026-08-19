@@ -135,6 +135,41 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         text: `Hint not uploaded`,
         image: "",
         audio: ""
+      },
+      27: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      28: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      29: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      30: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      31: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      32: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
+      },
+      33: {
+        text: `Hint not uploaded`,
+        image: "",
+        audio: ""
       }
     }
   }
