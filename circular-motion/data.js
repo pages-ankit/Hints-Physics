@@ -102,8 +102,8 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       20: {
-        text: `Hint not uploaded`,
-        image: "",
+        text: `Vector sum of tangential and centripetal acceleration`,
+        image: "O1Q20.png",
         audio: ""
       },
       21: {
