@@ -92,7 +92,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       18: {
-        text: `Hint not uploaded`,
+        text: `This is UCM. Tangential acceleration is zero. Entire acceleration is radially inwards.`,
         image: "",
         audio: ""
       },
