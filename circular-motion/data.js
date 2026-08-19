@@ -147,9 +147,9 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       29: {
-        text: `Hint not uploaded`,
+        text: `ROC at A is smaller than ROC at B. Go to car's frame. Higher centrifugal force at A compared to B`,
         image: "",
-        audio: ""
+        audio: "O1Q29.m4a"
       },
       30: {
         text: `Hint not uploaded`,
