@@ -2,7 +2,7 @@
 
 const exercisesData = {
   "Exercise O-I": {
-    totalQuestions: 26,
+    totalQuestions: 33,
     hints: {
       1: {
         text: `Use the fundamental definition of angular velocity:
