@@ -137,7 +137,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       27: {
-        text: `Hint not uploaded`,
+        text: `Resolve the tension force along vertical and radial direction then write force equations`,
         image: "",
         audio: ""
       },
@@ -152,17 +152,18 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: "O1Q29.m4a"
       },
       30: {
-        text: `Hint not uploaded`,
+        text: `Misplaced question. The question is actually of friction. As very slow movement is mention the insect is almost in equilibrium.`,
         image: "",
         audio: ""
       },
       31: {
-        text: `Hint not uploaded`,
+        text: `Solve in frame of the rotating cylinder. Apply centrifugal force radially outward. Friction here will be at its limiting value.`,
         image: "",
         audio: ""
       },
       32: {
-        text: `Hint not uploaded`,
+        text: `Normal will act perpendicular to the tangent drawn at the location of the particle. Resolve normal into vertical and radial components like the way 
+        we do for tension in conical pendulum. Find angle which the radius of ring make with radius of the circle traced by the bead`,
         image: "",
         audio: ""
       },
