@@ -56,7 +56,7 @@ const exercisesData = {
       15: { text: "Hint not uploaded", image: "", audio: "" }
     }
   },
-  "Exercise S-I": {
+  "Exercise S": {
     totalQuestions: 20,
     hints: {
       1: { text: "Hint not uploaded", image: "", audio: "" },
