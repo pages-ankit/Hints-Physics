@@ -42,7 +42,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       8: {
-        text: `Cross product relations. $$\\vec{v} = \\vec{\\mega} \\times \\vec{r}$$`,
+        text: `Cross product relations. $$\\vec{v} = \\vec{\\omega} \\times \\vec{r}$$`,
         image: "",
         audio: ""
       },
@@ -57,7 +57,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       11: {
-        text: `Time period of the second had of a clock is 60 seconds. This will help in getting $\omega$`,
+        text: `Time period of the second hand of a clock is 60 seconds. This will help in getting $\\omega$`,
         image: "",
         audio: ""
       },
@@ -82,7 +82,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: "O1Q15.m4a"
       },
       16: {
-        text: `Since this is UCM, the acceleration mentioned here is centripetal acceleration. $v=\\omega R$`,
+        text: `Since this is UCM, the acceleration mentioned here is centripetal acceleration. $v = \\omega R$`,
         image: "",
         audio: ""
       },
@@ -112,7 +112,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       22: {
-        text: `Concept of general angular velocity about a specific point of observation. Find component of instantaneous velocity along the effective radius.`,
+        text: `Concept of general angular velocity about a specific point of observation. Find component of instantaneous velocity perpendicular to the line joining the particle and observation point.`,
         image: "",
         audio: ""
       },
@@ -162,8 +162,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       },
       32: {
-        text: `Normal will act perpendicular to the tangent drawn at the location of the particle. Resolve normal into vertical and radial components like the way 
-        we do for tension in conical pendulum. Find angle which the radius of ring make with radius of the circle traced by the bead`,
+        text: `Normal will act perpendicular to the tangent drawn at the location of the particle. Resolve normal into vertical and radial components like the way we do for tension in conical pendulum. Find angle which the radius of ring make with radius of the circle traced by the bead`,
         image: "",
         audio: ""
       },
@@ -173,8 +172,35 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
         audio: ""
       }
     }
+  },
+  "Exercise S": {
+    totalQuestions: 23,
+    hints: {
+      1: { text: `Hint not uploaded`, image: "", audio: "" },
+      2: { text: `Hint not uploaded`, image: "", audio: "" },
+      3: { text: `Hint not uploaded`, image: "", audio: "" },
+      4: { text: `Hint not uploaded`, image: "", audio: "" },
+      5: { text: `Hint not uploaded`, image: "", audio: "" },
+      6: { text: `Hint not uploaded`, image: "", audio: "" },
+      7: { text: `Hint not uploaded`, image: "", audio: "" },
+      8: { text: `Hint not uploaded`, image: "", audio: "" },
+      9: { text: `Hint not uploaded`, image: "", audio: "" },
+      10: { text: `Hint not uploaded`, image: "", audio: "" },
+      11: { text: `Hint not uploaded`, image: "", audio: "" },
+      12: { text: `Hint not uploaded`, image: "", audio: "" },
+      13: { text: `Hint not uploaded`, image: "", audio: "" },
+      14: { text: `Hint not uploaded`, image: "", audio: "" },
+      15: { text: `Hint not uploaded`, image: "", audio: "" },
+      16: { text: `Hint not uploaded`, image: "", audio: "" },
+      17: { text: `Hint not uploaded`, image: "", audio: "" },
+      18: { text: `Hint not uploaded`, image: "", audio: "" },
+      19: { text: `Hint not uploaded`, image: "", audio: "" },
+      20: { text: `Hint not uploaded`, image: "", audio: "" },
+      21: { text: `Hint not uploaded`, image: "", audio: "" },
+      22: { text: `Hint not uploaded`, image: "", audio: "" },
+      23: { text: `Hint not uploaded`, image: "", audio: "" }
+    }
   }
 };
 
-// Export if used as ES module:
-// export default exercisesData;
+export default exercisesData;
