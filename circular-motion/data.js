@@ -203,4 +203,4 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
   }
 };
 
-export default exercisesData;
+
