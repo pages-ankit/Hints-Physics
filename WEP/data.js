@@ -1,4 +1,4 @@
-// data.js - Capacitance Hints Data
+// data.js - WEP Hints Data
 
 const exercisesData = {
   "Exercise O-I": {
