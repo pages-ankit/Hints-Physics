@@ -221,10 +221,10 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
       15: { text: "Hint not uploaded", image: "", audio: "" },
       16: { text: "Hint not uploaded", image: "", audio: "" },
       17: { text: "Hint not uploaded", image: "", audio: "" },
-      18: { text: "Hint not uploaded", image: "", audio: "" },
+      18: { text: "Hint not uploaded", image: "JMQ18.png", audio: "" },
       19: { text: "Hint not uploaded", image: "", audio: "" },
       20: { text: "Hint not uploaded", image: "", audio: "" },
-      21: { text: "Hint not uploaded", image: "", audio: "" }
+      21: { text: "Solve in frame of the table. Centrifugal force is variable and function of x. Integrate along the radial direction", image: "", audio: "" }
     }
   }  
 };
