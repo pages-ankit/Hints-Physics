@@ -3,128 +3,292 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRISM — Physics Repository for Indexed Study Materials</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <title>Physics Exercise Hints</title>
 
+  <!-- KaTeX for Physics LaTeX rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.5;
-      background: #fafafa;
-      color: #1a1a1a;
-      padding: 24px 16px;
+      padding: 16px;
       max-width: 800px;
       margin: auto;
+      background: #fafafa;
+      color: #1a1a1a;
     }
+    h1 { font-size: 1.3rem; margin-bottom: 12px; }
 
-    /* Header & Branding */
-    header {
-      margin-bottom: 24px;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 16px;
+    /* Exercise Selection Tabs */
+    .tabs-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
     }
-
-    .brand-title {
-      font-size: 1.8rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      color: #0066cc;
-    }
-
-    .brand-subtitle {
+    .tab-btn {
+      padding: 6px 14px;
       font-size: 0.95rem;
-      color: #555;
-      margin-top: 4px;
+      font-weight: 600;
+      border: 1px solid #ccc;
+      background: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .tab-btn.active {
+      background: #0066cc;
+      color: #fff;
+      border-color: #0055aa;
     }
 
-    /* Module Grid */
-    .section-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin: 20px 0 12px 0;
-      color: #333;
-    }
-
+    /* Question Number Grid */
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-
-    .card {
-      display: block;
-      text-decoration: none;
-      padding: 16px 18px;
+      grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+      gap: 6px;
+      margin-bottom: 16px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
       background: #fff;
-      border: 1px solid #d0e2ff;
-      border-left: 4px solid #0066cc;
-      border-radius: 6px;
-      color: #1a1a1a;
-      font-size: 1rem;
-      font-weight: 600;
-      transition: all 0.15s ease;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .q-btn {
+      padding: 8px 0;
+      font-size: 0.85rem;
+      font-weight: bold;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
     }
 
-    .card:hover {
-      border-color: #0066cc;
-      background: #f0f6ff;
-      color: #0066cc;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 102, 204, 0.12);
+    /* Status: Available Hint */
+    .q-btn.has-hint {
+      background-color: #e8f5e9;
+      border: 1px solid #81c784;
+      color: #2e7d32;
+    }
+    .q-btn.has-hint:hover {
+      background-color: #c8e6c9;
     }
 
-    .card span {
-      display: block;
-      font-size: 0.8rem;
-      font-weight: normal;
-      color: #555;
-      margin-top: 6px;
+    /* Status: No Hint Uploaded */
+    .q-btn.no-hint {
+      background-color: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      color: #9e9e9e;
+      opacity: 0.7;
+    }
+    .q-btn.no-hint:hover {
+      background-color: #eeeeee;
     }
 
-    /* Footer */
+    /* Active Selected State */
+    .q-btn.active {
+      background: #222 !important;
+      color: #fff !important;
+      border-color: #222 !important;
+      opacity: 1 !important;
+    }
+
+    /* Footer & Navigation Link */
     footer {
-      margin-top: 40px;
-      padding-top: 16px;
+      margin-top: 24px;
+      padding-top: 14px;
       border-top: 1px solid #e0e0e0;
       text-align: center;
-      font-size: 0.8rem;
-      color: #777;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
+    .prism-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #0066cc;
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid #d0e2ff;
+      background: #f0f6ff;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    .prism-link:hover {
+      background: #0066cc;
+      color: #fff;
+      border-color: #0066cc;
+    }
+    
+    /* Hint Box Area */
+    #hint-box {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 16px;
+      background: #fff;
+      min-height: 180px;
+    }
+    .hint-header {
+      font-size: 1.05rem;
+      font-weight: bold;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+    .hint-section { margin-bottom: 12px; }
+    .hint-section img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      margin-top: 6px;
+      display: block;
+    }
+    audio { width: 100%; margin-top: 6px; }
+    .empty-state { color: #777; font-style: italic; }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="brand-title">PRISM</div>
-    <div class="brand-subtitle">Physics Repository for Indexed Study Materials</div>
-  </header>
+  <h1>Hints: Circular Motion Module</h1>
 
-  <main>
-    <div class="section-title">Available Modules</div>
-    <div class="grid-container">
-      <a href="./circular-motion/" class="card">
-        Circular Motion
-        <span>Exercise Hints, Diagrams & Audio Solutions →</span>
-      </a>
-      <a href="./work/" class="card">
-        Work Energy And Power
-        <span>Exercise Hints, Diagrams & Audio Solutions →</span>
-      </a>
-    </div>
-  </main>
+  <!-- Dynamic Section Tabs -->
+  <div class="tabs-bar" id="tabs-container"></div>
+
+  <!-- Dynamic Question Grid -->
+  <div class="grid-container" id="index-grid"></div>
+
+  <!-- Hint Viewer -->
+  <div id="hint-box">
+    <div class="empty-state">Select a question number to view hints.</div>
+  </div>
+
+  <!-- Load Data -->
+  <script src="data.js"></script>
+
+  <script>
+    const tabsContainer = document.getElementById("tabs-container");
+    const gridContainer = document.getElementById("index-grid");
+    const hintBox = document.getElementById("hint-box");
+
+    let currentExercise = Object.keys(exercisesData)[0];
+
+    // Helper: checks if a question actually has content
+    function checkHasHint(hintObj) {
+      if (!hintObj) return false;
+      const text = hintObj.text ? hintObj.text.trim() : "";
+      const hasText = text !== "" && text.toLowerCase() !== "hint not uploaded";
+      const hasImage = Boolean(hintObj.image && hintObj.image.trim() !== "");
+      const hasAudio = Boolean(hintObj.audio && hintObj.audio.trim() !== "");
+      return hasText || hasImage || hasAudio;
+    }
+
+    // 1. Render Tabs
+    function renderTabs() {
+      tabsContainer.innerHTML = "";
+      Object.keys(exercisesData).forEach(exKey => {
+        const btn = document.createElement("button");
+        btn.className = `tab-btn ${exKey === currentExercise ? 'active' : ''}`;
+        btn.textContent = exKey;
+        btn.onclick = () => {
+          currentExercise = exKey;
+          renderTabs();
+          renderQuestionGrid();
+          resetHintBox();
+        };
+        tabsContainer.appendChild(btn);
+      });
+    }
+
+    // 2. Render Questions for Selected Exercise
+    function renderQuestionGrid() {
+      gridContainer.innerHTML = "";
+      const exConfig = exercisesData[currentExercise];
+      if (!exConfig) return;
+
+      const hints = exConfig.hints || {};
+
+      for (let i = 1; i <= exConfig.totalQuestions; i++) {
+        const isAvailable = checkHasHint(hints[i]);
+        const btn = document.createElement("button");
+        btn.className = `q-btn ${isAvailable ? 'has-hint' : 'no-hint'}`;
+        btn.textContent = i;
+        btn.title = isAvailable ? "Hint Available" : "Hint Not Uploaded";
+        btn.onclick = () => loadHint(i, btn);
+        gridContainer.appendChild(btn);
+      }
+    }
+
+    // 3. Display Selected Hint
+    function loadHint(qNum, btnElement) {
+      document.querySelectorAll(".q-btn").forEach(b => b.classList.remove("active"));
+      btnElement.classList.add("active");
+
+      const hints = exercisesData[currentExercise]?.hints || {};
+      const data = hints[qNum];
+      const isAvailable = checkHasHint(data);
+
+      if (!data || !isAvailable) {
+        hintBox.innerHTML = `
+          <div class="hint-header">${currentExercise} — Q${qNum}</div>
+          <p class="empty-state">No hint uploaded for this question yet.</p>
+        `;
+        return;
+      }
+
+      let contentHTML = `<div class="hint-header">${currentExercise} — Question ${qNum}</div>`;
+
+      if (data.text && data.text.trim().toLowerCase() !== "hint not uploaded") {
+        contentHTML += `<div class="hint-section"><p>${data.text}</p></div>`;
+      }
+      if (data.image) {
+        contentHTML += `
+          <div class="hint-section">
+            <strong>Diagram:</strong>
+            <img src="${data.image}" alt="Diagram for Q${qNum}">
+          </div>`;
+      }
+      if (data.audio) {
+        contentHTML += `
+          <div class="hint-section">
+            <strong>Audio Explanation:</strong>
+            <audio controls src="${data.audio}"></audio>
+          </div>`;
+      }
+
+      hintBox.innerHTML = contentHTML;
+
+      // Re-trigger KaTeX formula parsing
+      if (window.renderMathInElement) {
+        renderMathInElement(hintBox, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false }
+          ]
+        });
+      }
+    }
+
+    function resetHintBox() {
+      hintBox.innerHTML = `<div class="empty-state">Select a question number from ${currentExercise}.</div>`;
+    }
+
+    // Initialize UI
+    renderTabs();
+    renderQuestionGrid();
+  </script>
 
   <footer>
-    <div>PRISM &bull; Structured Physics Learning Repository</div>
+    <a href="https://sites.google.com/view/prism-dashboard/home" target="_blank" class="prism-link">
+      <span>← Back to PRISM Dashboard</span>
+    </a>
     <img src="https://hits.sh/pages-ankit.github.io/Hints-Physics.svg?view=today-total&label=Page+Views&color=0066cc" alt="Page Views" />
   </footer>
 
