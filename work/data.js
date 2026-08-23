@@ -82,7 +82,7 @@ $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Inclin
     }
   },
   "Exercise O-II": {
-    totalQuestions: 15,
+    totalQuestions: 42,
     hints: {
       1: { image: "", audio: "", text: "Hint not uploaded" },
       2: { image: "", audio: "", text: "Hint not uploaded" },
@@ -129,7 +129,7 @@ $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Inclin
     }
   },
   "Exercise S": {
-    totalQuestions: 20,
+    totalQuestions: 30,
     hints: {
       1: { image: "", audio: "", text: "Hint not uploaded" },
       2: { image: "", audio: "", text: "Hint not uploaded" },
@@ -164,7 +164,7 @@ $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Inclin
     }
   },
   "JEE Main": {
-    totalQuestions: 25,
+    totalQuestions: 33,
     hints: {
       1: { image: "", audio: "", text: "Hint not uploaded" },
       2: { image: "", audio: "", text: "Hint not uploaded" },
