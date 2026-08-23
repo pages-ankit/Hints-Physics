@@ -2,7 +2,7 @@
 
 const exercisesData = {
   "Exercise O-I": {
-    totalQuestions: 30,
+    totalQuestions: 70,
     hints: {
       1: { image: "", audio: "", text: "Vector concept. First find displacement vector then calculate DOT Product to get work. " },
       2: { image: "", audio: "", text: "Hint not uploaded" },
@@ -32,9 +32,49 @@ const exercisesData = {
       26: { image: "", audio: "", text: "Hint not uploaded" },
       27: { image: "", audio: "", text: "Hint not uploaded" },
       28: { image: "", audio: "", text: "Hint not uploaded" },
-      65: { image: "", audio: "", text: "text: `In Indian physics problems (especially Mechanics/Inclined planes) and railway gradient problems, "1 in $n$" or "$m$ in $n$" is often defined as the rise per unit distance measured <strong>along the incline</strong> itself:
+      65: { image: "", audio: "", text: "Hint not uploaded" },
+      30: { image: "", audio: "", text: "Hint not uploaded" },
+      31: { image: "", audio: "", text: "Hint not uploaded" },
+      32: { image: "", audio: "", text: "Hint not uploaded" },
+      33: { image: "", audio: "", text: "Hint not uploaded" },
+      34: { image: "", audio: "", text: "Hint not uploaded" },
+      35: { image: "", audio: "", text: "Hint not uploaded" },
+      36: { image: "", audio: "", text: "Hint not uploaded" },
+      37: { image: "", audio: "", text: "Hint not uploaded" },
+      38: { image: "", audio: "", text: "Hint not uploaded" },
+      39: { image: "", audio: "", text: "Hint not uploaded" },
+      40: { image: "", audio: "", text: "Hint not uploaded" },
+      41: { image: "", audio: "", text: "Hint not uploaded" },
+      42: { image: "", audio: "", text: "Hint not uploaded" },
+      43: { image: "", audio: "", text: "Hint not uploaded" },
+      44: { image: "", audio: "", text: "Hint not uploaded" },
+      45: { image: "", audio: "", text: "Hint not uploaded" },
+      46: { image: "", audio: "", text: "Hint not uploaded" },
+      47: { image: "", audio: "", text: "Hint not uploaded" },
+      48: { image: "", audio: "", text: "Hint not uploaded" },
+      49: { image: "", audio: "", text: "Hint not uploaded" },
+      50: { image: "", audio: "", text: "Hint not uploaded" },
+      51: { image: "", audio: "", text: "Hint not uploaded" },
+      52: { image: "", audio: "", text: "Hint not uploaded" },
+      53: { image: "", audio: "", text: "Hint not uploaded" },
+      54: { image: "", audio: "", text: "Hint not uploaded" },
+      55: { image: "", audio: "", text: "Hint not uploaded" },
+      56: { image: "", audio: "", text: "Hint not uploaded" },
+      57: { image: "", audio: "", text: "Hint not uploaded" },
+      58: { image: "", audio: "", text: "Hint not uploaded" },
+      59: { image: "", audio: "", text: "Hint not uploaded" },
+      60: { image: "", audio: "", text: "Hint not uploaded" },
+      61: { image: "", audio: "", text: "Hint not uploaded" },
+      62: { image: "", audio: "", text: "Hint not uploaded" },
+      63: { image: "", audio: "", text: "Hint not uploaded" },
+      64: { image: "", audio: "", text: "Hint not uploaded" },
+      65: { image: "", audio: "", text: "In Indian physics problems (especially Mechanics/Inclined planes) and railway gradient problems, "1 in $n$" or "$m$ in $n$" is often defined as the rise per unit distance measured <strong>along the incline</strong> itself:
 $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Incline}} = \\frac{2}{25} = 0.08$$`" },
-      30: { image: "", audio: "", text: "Hint not uploaded" }
+      66: { image: "", audio: "", text: "Hint not uploaded" },
+      67: { image: "", audio: "", text: "Hint not uploaded" },
+      68: { image: "", audio: "", text: "Hint not uploaded" },
+      69: { image: "", audio: "", text: "Hint not uploaded" },
+      70: { image: "", audio: "", text: "Hint not uploaded" }
     }
   },
   "Exercise O-II": {
