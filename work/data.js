@@ -74,7 +74,7 @@ const exercisesData = {
         text: `In Indian physics problems (especially Mechanics/Inclined planes) and railway gradient problems, "1 in $n$" or "$m$ in $n$" is often defined as the rise per unit distance measured <strong>along the incline</strong> itself:
 $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Incline}} = \\frac{2}{25} = 0.08$$`
       },
-      66: { image: "", audio: "", text: "Hint not uploaded" },
+      66: { image: "", audio: "", text: "Calculate DOT product- algebriac method" },
       67: { image: "", audio: "", text: "Hint not uploaded" },
       68: { image: "", audio: "", text: "Hint not uploaded" },
       69: { image: "", audio: "", text: "Hint not uploaded" },
@@ -94,11 +94,38 @@ $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Inclin
       8: { image: "", audio: "", text: "Hint not uploaded" },
       9: { image: "", audio: "", text: "Hint not uploaded" },
       10: { image: "", audio: "", text: "Hint not uploaded" },
-      11: { image: "", audio: "", text: "Hint not uploaded" },
+      11: { image: "", audio: "", text: "This is a central force and hence conservative. Path independent work. $(x^2 + y^2)^{3/2} = r$ and $text: `$x\\hat{i} + y\\hat{j} = \\vec{r}$`$ " },
       12: { image: "", audio: "", text: "Hint not uploaded" },
       13: { image: "", audio: "", text: "Hint not uploaded" },
       14: { image: "", audio: "", text: "Hint not uploaded" },
-      15: { image: "", audio: "", text: "Hint not uploaded" }
+      15: { image: "", audio: "", text: "Hint not uploaded" },
+      16: { image: "", audio: "", text: "Hint not uploaded" },
+      17: { image: "", audio: "", text: "Hint not uploaded" },
+      18: { image: "", audio: "", text: "Hint not uploaded" },
+      19: { image: "", audio: "", text: "Hint not uploaded" },
+      20: { image: "", audio: "", text: "Hint not uploaded" },
+      21: { image: "", audio: "", text: "Hint not uploaded" },
+      22: { image: "", audio: "", text: "Hint not uploaded" },
+      23: { image: "", audio: "", text: "Hint not uploaded" },
+      24: { image: "", audio: "", text: "Hint not uploaded" },
+      25: { image: "", audio: "", text: "Hint not uploaded" },
+      26: { image: "", audio: "", text: "$(x^2 + y^2)^{3/2} = r$ and $text: `$x\\hat{i} + y\\hat{j} = \\vec{r}$`$" },
+      27: { image: "", audio: "", text: "Hint not uploaded" },
+      28: { image: "", audio: "", text: "Hint not uploaded" },
+      29: { image: "", audio: "", text: "Hint not uploaded" },
+      30: { image: "", audio: "", text: "Hint not uploaded" },
+      31: { image: "", audio: "", text: "Hint not uploaded" },
+      32: { image: "", audio: "", text: "Hint not uploaded" },
+      33: { image: "", audio: "", text: "Hint not uploaded" },
+      34: { image: "", audio: "", text: "Hint not uploaded" },
+      35: { image: "", audio: "", text: "Hint not uploaded" },
+      36: { image: "", audio: "", text: "Hint not uploaded" },
+      37: { image: "", audio: "", text: "Hint not uploaded" },
+      38: { image: "", audio: "", text: "Hint not uploaded" },
+      39: { image: "", audio: "", text: "Hint not uploaded" },
+      40: { image: "", audio: "", text: "Hint not uploaded" },
+      41: { image: "", audio: "", text: "Hint not uploaded" },
+      42: { image: "", audio: "", text: "Hint not uploaded" }
     }
   },
   "Exercise S": {
@@ -123,7 +150,17 @@ $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Inclin
       17: { image: "", audio: "", text: "Hint not uploaded" },
       18: { image: "", audio: "", text: "Hint not uploaded" },
       19: { image: "", audio: "", text: "Hint not uploaded" },
-      20: { image: "", audio: "", text: "Hint not uploaded" }
+      20: { image: "", audio: "", text: "Hint not uploaded" },
+      21: { image: "", audio: "", text: "Hint not uploaded" },
+      22: { image: "", audio: "", text: "Hint not uploaded" },
+      23: { image: "", audio: "", text: "Hint not uploaded" },
+      24: { image: "", audio: "", text: "Hint not uploaded" },
+      25: { image: "", audio: "", text: "Hint not uploaded" },
+      26: { image: "", audio: "", text: "Hint not uploaded" },
+      27: { image: "", audio: "", text: "Hint not uploaded" },
+      28: { image: "", audio: "", text: "Hint not uploaded" },
+      29: { image: "", audio: "", text: "Hint not uploaded" },
+      30: { image: "", audio: "", text: "Hint not uploaded" }
     }
   },
   "JEE Main": {
