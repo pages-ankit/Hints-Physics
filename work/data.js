@@ -155,10 +155,10 @@ $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Inclin
       22: { image: "", audio: "", text: "Hint not uploaded" },
       23: { image: "", audio: "", text: "Hint not uploaded" },
       24: { image: "", audio: "", text: "Hint not uploaded" },
-      25: { image: "", audio: "", text: "Hint not uploaded" },
+      25: { image: "", audio: "", text: "Solve in frame of the wedge. Find work done by pseudo force. Apply WET. In the critical condition the speed of block will just become zero when it reaches the top." },
       26: { image: "", audio: "", text: "Hint not uploaded" },
       27: { image: "", audio: "", text: "Hint not uploaded" },
-      28: { image: "", audio: "", text: "Hint not uploaded" },
+      28: { image: "", audio: "", text: "Integrate power with respect to time" },
       29: { image: "", audio: "", text: "Hint not uploaded" },
       30: { image: "", audio: "", text: "Hint not uploaded" }
     }
@@ -172,7 +172,7 @@ $$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Inclin
       4: { image: "", audio: "", text: "Hint not uploaded" },
       5: { image: "", audio: "", text: "Hint not uploaded" },
       6: { image: "", audio: "", text: "Hint not uploaded" },
-      7: { image: "", audio: "", text: "Hint not uploaded" },
+      7: { image: "", audio: "", text: "Concept of circular motion. Given central force is the centripetal force. $$F = \\frac{k}{R^n} = m \\omega^2 R$$" },
       8: { image: "", audio: "", text: "Hint not uploaded" },
       9: { image: "", audio: "", text: "Hint not uploaded" },
       10: { image: "", audio: "", text: "Hint not uploaded" },
