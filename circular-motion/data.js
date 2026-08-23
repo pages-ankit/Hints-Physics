@@ -202,7 +202,7 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
     }
   },
   "JEE Main": {
-    totalQuestions: 25,
+    totalQuestions: 21,
     hints: {
       1: { text: "For lump of mixture to fall down, N=0 at the top of the mixing drum. Case of vertical circular motion.", image: "", audio: "" },
       2: { text: "Very bad calculation due to bad data. Use calculator to solve so that you can focus on checking the concept first. Then try the manual calcualtions.", image: "", audio: "" },
