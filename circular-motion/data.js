@@ -206,11 +206,11 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
     hints: {
       1: { text: "For lump of mixture to fall down, N=0 at the top of the mixing drum. Case of vertical circular motion.", image: "", audio: "" },
       2: { text: "Very bad calculation due to bad data. Use calculator to solve so that you can focus on checking the concept first. Then try the manual calcualtions.", image: "", audio: "" },
-      3: { text: "Hint not uploaded", image: "", audio: "" },
-      4: { text: "Hint not uploaded", image: "", audio: "" },
+      3: { text: "Hint not uploaded", image: "JMQ3.png", audio: "" },
+      4: { text: "Hint not uploaded", image: "JMQ4.png", audio: "" },
       5: { text: "$\\vec{a} \\times \\vec{b} = |\\vec{a}| |\\vec{b}| \\sin\\theta \\, \\hat{n}$, given condition possible only when $\\sin\\theta=0$", image: "", audio: "" },
-      6: { text: "Hint not uploaded", image: "", audio: "" },
-      7: { text: "Hint not uploaded", image: "", audio: "" },
+      6: { text: "Hint not uploaded", image: "JMQ6.png", audio: "" },
+      7: { text: "Hint not uploaded", image: "JMQ7.png", audio: "" },
       8: { text: "Use Equations of motion. Using 1st EOM get $\\alpha$ and then use 3rd EOM to angular displacement $\\theta$", image: "", audio: "" },
       9: { text: "There is typing mistake- missing data in the question. Take $\\mu=0.2$ ", image: "", audio: "" },
       10: { text: "Case of conical pendulum", image: "", audio: "" },
@@ -218,13 +218,13 @@ One complete rotation corresponds to $\\Delta\\theta = 2\\pi$. $\\text{RPM} = \\
       12: { text: "Spring force will provide necessary centripetal force", image: "JMQ12.png", audio: "" },
       13: { text: "Solve in car's frame. Apply pseudo force- centrifugal force", image: "", audio: "" },
       14: { text: "Cross product using Determinant Method, then use defnition of a unit vector.", image: "", audio: "" },
-      15: { text: "Hint not uploaded", image: "", audio: "" },
-      16: { text: "Hint not uploaded", image: "", audio: "" },
+      15: { text: "Hint not uploaded", image: "JMQ15.png", audio: "" },
+      16: { text: "Hint not uploaded", image: "JMQ16.png", audio: "" },
       17: { text: "Write force equation along radial direction. Use $\\pi^{2}=9.8$ and $g=9.8$", image: "", audio: "" },
       18: { text: "Hint not uploaded", image: "JMQ18.png", audio: "" },
-      19: { text: "Hint not uploaded", image: "", audio: "" },
-      20: { text: "Hint not uploaded", image: "", audio: "" },
-      21: { text: "Solve in frame of the table. Centrifugal force is variable and function of x. Integrate along the radial direction", image: "", audio: "" }
+      19: { text: "Hint not uploaded", image: "JMQ19.png", audio: "" },
+      20: { text: "Hint not uploaded", image: "JMQ20.png", audio: "" },
+      21: { text: "Solve in frame of the table. Centrifugal force is variable and function of x. Integrate along the radial direction. For more details refer HCV Circular Motion solved example 13", image: "JMQ21.png", audio: "" }
     }
   }  
 };
