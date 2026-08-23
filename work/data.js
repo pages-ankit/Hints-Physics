@@ -4,11 +4,11 @@ const exercisesData = {
   "Exercise O-I": {
     totalQuestions: 70,
     hints: {
-      1: { image: "", audio: "", text: "Vector concept. First find displacement vector then calculate DOT Product to get work. " },
+      1: { image: "", audio: "", text: "Vector concept. First find displacement vector then calculate DOT Product to get work." },
       2: { image: "", audio: "", text: "Hint not uploaded" },
       3: { image: "", audio: "", text: "Hint not uploaded" },
       4: { image: "", audio: "", text: "First calculate tension using NLM concepts. Work done by rope implies work done by tension." },
-      5: { image: "", audio: "", text: "Angle between force and displacement is $60 degree$" },
+      5: { image: "", audio: "", text: "Angle between force and displacement is $60^\\circ$" },
       6: { image: "", audio: "", text: "Hint not uploaded" },
       7: { image: "", audio: "", text: "Hint not uploaded" },
       8: { image: "", audio: "", text: "Hint not uploaded" },
@@ -32,7 +32,7 @@ const exercisesData = {
       26: { image: "", audio: "", text: "Hint not uploaded" },
       27: { image: "", audio: "", text: "Hint not uploaded" },
       28: { image: "", audio: "", text: "Hint not uploaded" },
-      65: { image: "", audio: "", text: "Hint not uploaded" },
+      29: { image: "", audio: "", text: "Hint not uploaded" },
       30: { image: "", audio: "", text: "Hint not uploaded" },
       31: { image: "", audio: "", text: "Hint not uploaded" },
       32: { image: "", audio: "", text: "Hint not uploaded" },
@@ -68,8 +68,12 @@ const exercisesData = {
       62: { image: "", audio: "", text: "Hint not uploaded" },
       63: { image: "", audio: "", text: "Hint not uploaded" },
       64: { image: "", audio: "", text: "Hint not uploaded" },
-      65: { image: "", audio: "", text: "In Indian physics problems (especially Mechanics/Inclined planes) and railway gradient problems, "1 in $n$" or "$m$ in $n$" is often defined as the rise per unit distance measured <strong>along the incline</strong> itself:
-$$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Incline}} = \\frac{2}{25} = 0.08$$`" },
+      65: {
+        image: "",
+        audio: "",
+        text: `In Indian physics problems (especially Mechanics/Inclined planes) and railway gradient problems, "1 in $n$" or "$m$ in $n$" is often defined as the rise per unit distance measured <strong>along the incline</strong> itself:
+$$\\sin \\theta = \\frac{\\text{Vertical Rise}}{\\text{Distance along the Incline}} = \\frac{2}{25} = 0.08$$`
+      },
       66: { image: "", audio: "", text: "Hint not uploaded" },
       67: { image: "", audio: "", text: "Hint not uploaded" },
       68: { image: "", audio: "", text: "Hint not uploaded" },
